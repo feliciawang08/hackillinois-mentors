@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
+  background-image: linear-gradient(rgb(255, 221, 227), rgb(255, 255, 194));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-image: linear-gradient(45deg, #cc8a8a 25%, #f5f0ce 25%, #f5f0ce 50%, #cc8a8a 50%, #cc8a8a 75%, #f5f0ce 75%, #f5f0ce 100%);
+  background-size: 56.57px 56.57px;
+  padding:10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.img_hackillinois {
+  width:200px;
+  height:auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img_bakery {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:auto;
+  width:450px;
+}
+
+.img_tree {
+  position:fixed;
+  right:0px;
+  bottom:0px;
+  height:auto;
+  width:auto;
+  padding-bottom:10px;
+}
+
+.img_grass {
+  position:fixed;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  bottom:0px;
+  width:100%;
+  height:15%;
 }
