@@ -12,9 +12,9 @@ function App() {
       <header className="header" id="top-banner" role="banner">
         <img className="img_hackillinois" src={hackillinois} alt="HackIllinois Logo"/>
       </header>
-      <img className="img_grass" src={grass} alt="Grass in Background"/>
-      <img className="img_bakery" src={bakery} alt="Bakery Shop in Background"/>
-      <img className="img_tree" src={tree} alt="Apple Tree in Background"/>
+      <img className="img_grass" src={grass} alt="Grass in Background" aria-hidden="true"/>
+      <img className="img_bakery" src={bakery} alt="Bakery Shop in Background" aria-hidden="true"/>
+      <img className="img_tree" src={tree} alt="Apple Tree in Background" aria-hidden="true"/>
       <MentorsPage />
     </div>
   );
