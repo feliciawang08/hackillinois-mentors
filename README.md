@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# HackIllinois Mentor Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mentors webpage utilizing React created for the Fall 2021 HackIllinois Systems Team application.
 
 ## Available Scripts
 
