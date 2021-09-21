@@ -2,19 +2,25 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './MentorsPageStyles.css';
 import bakeryBackground from '../assets/Mentors/bakerybg.png';
+import SyncLoader from 'react-spinners/SyncLoader';
 
 function MentorsPage() {
     const url = 'https://api.hackillinois.org/upload/blobstore/mentors/';
     const [mentors, setMentors] = useState(null);
 
+    const getMentors = async() => {
+      try {
+        await axios.get(url)
+        .then(result => {
+          setMentors(result.data);
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
     useEffect(() => {
-        axios.get(url)
-            .then(result => {
-                setMentors(result.data)
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        getMentors();
     }, [url]);
 
     // Only for valid Mentors
@@ -41,7 +47,9 @@ function MentorsPage() {
     }
 
     return (
-        <div></div>
+        <div className="center_load">
+          <SyncLoader size={35} color={'#CC8A8A'}/>
+        </div>
     );
     
 }

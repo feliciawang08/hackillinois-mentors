@@ -6,7 +6,6 @@ import hackillinois from './assets/App/hackillinois.png'
 import tree from './assets/App/tree.png'
 
 function App() {
-
   return (
     <div className="App" id="app-css">
       <header className="header" id="top-banner" role="banner">

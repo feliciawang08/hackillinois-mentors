@@ -95,6 +95,14 @@ section {
     color: #333;
 }
 
+.center_load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
 @media screen and (min-width: 700px) {
     .card-wrapper {
         flex-direction: row;
