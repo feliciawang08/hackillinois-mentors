@@ -47,8 +47,8 @@ function MentorsPage() {
     }
 
     return (
-        <div className="center_load">
-          <SyncLoader size={35} color={'#CC8A8A'}/>
+        <div id="loading" className="center_load">
+          <SyncLoader role="alert" aria-busy="true" size={35} color={'#CC8A8A'}/>
         </div>
     );
     
